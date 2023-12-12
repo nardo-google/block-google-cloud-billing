@@ -1,21 +1,19 @@
-################ Constants ################
-
-constant: RECOMMENDATION_TABLE {
-  value: "instance.recommender.recommendations_export_v2"
-  export: override_optional
+constant: CONNECTION_NAME {
+  value: "cortex"
+  export: override_required
 }
 
-constant: BILLING_TABLE {
-  value: "instance.billing.gcp_billing_export_public"
-  export: override_optional
+constant: GCP_PROJECT {
+  value: "GCP Project Name"
+  export: override_required
 }
 
-constant: PRICING_TABLE {
-  value: "instance.billing.cloud_pricing_export"
-  export: override_optional
+constant: REPORTING_DATASET {
+  value: "Reporting Dataset Name"
+  export: override_required
 }
 
-constant: CONNECTION {
-  value: "bq-connection"
-  export: override_optional
+constant: CLIENT {
+  value: "Client ID"
+  export: override_required
 }
